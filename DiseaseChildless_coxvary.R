@@ -9,8 +9,8 @@
 #    By removing individuals with the outcome event prior to the disease exposure, we can avoid assigning potentially affected individuals to be unaffected; 
 # 2) Keep only families having full siblings discordant on outcome status, that is, at least one sibling with children and one being childless; 
 # 3) Within each family, randomly select one sibling with children as control, and the childless siblings with the closest birth year with the control as case; 
-# 4) If the case and the control are also discordant on disease status at the time point when the event occurs to the case, that is, the age at first birth for the childless indivdiual, 
-#    then we enroll this full-sibling pair into our matched pair case-control study;
+# 4) If the case and the control are also discordant on disease status at the time point when the event occurs to the case, that is, the age at first birth for the childless individual, 
+#    then we enroll this full-sibling pair into our matched pair case-control study.
 
 
 
