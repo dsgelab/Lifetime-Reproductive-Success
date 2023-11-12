@@ -2,7 +2,7 @@
 ### Association between disease and childlessness with a conditional logistic regression model (sibling design) --------------------------
 
 # To avoid the confounding from reverse causation and the higher prevalence of diseases in older people, 
-# We use a matched pair case-control study design within full-siblings and then apply a conditional logistic regression model or a coxPH model stratified by full-sib families. 
+# We use a matched pair case-control study design within full-siblings and then apply a conditional logistic regression model. 
 
 # The sibling matching processes could be: 
 # 1) Remove individuals with the outcome event before the disease exposure. 
