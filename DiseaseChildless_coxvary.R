@@ -1,16 +1,15 @@
 
-### Association between diseases and childlessness using time-varying coxPH model --------------------------
+### Association between disease and childlessness with a time-varying coxPH model (sibling design) --------------------------
 
-## Model 2: cond_coxvary_sibmatch: (need to use the entire population (born in 1956-1982) with same-sex full sibs since it can manage the censoring) -------------------
-# cox HR model stratified by full-sibling families for childlessness in sibling pairs disconcordant on outcomes, using a sibling-match design and considering disease status as time-varing covariable
+# coxPH model stratified by full-sibling families for childlessness in sibling pairs discordant on outcomes, using a sibling-match design and considering disease status as time-varying covariable
 # To avoid the confounding from reverse causation and the higher prevalence of diseases in older people, 
-#    we use a matched pair case-control study design within full-siblings and then apply cox HR model stratified by full-sib families. 
+# We use a matched pair case-control study design within full-siblings and then apply a coxPH model stratified by full-sib families. 
 # The sibling matching processes could be: 
 # 1) remove individuals with the outcome event prior to the disease exposure. 
-#    By removing individuals with the outcome event prior to the disease exposure, we can avoid assigning potential affected individuals to be unaffected; 
-# 2) Keep only families having full-siblings discordant on outcome status, that is at least one sibling with children and one being childless; 
-# 3) Within each family, randomly select one sibling with children as control, and the childless siblings with closest birth year with the control as case; 
-# 4) If the case and the control are also discordant on disease status at the time point when the event occurs to the case that is the age at first birth for case for childless, 
+#    By removing individuals with the outcome event prior to the disease exposure, we can avoid assigning potentially affected individuals to be unaffected; 
+# 2) Keep only families having full siblings discordant on outcome status, that is, at least one sibling with children and one being childless; 
+# 3) Within each family, randomly select one sibling with children as control, and the childless siblings with the closest birth year with the control as case; 
+# 4) If the case and the control are also discordant on disease status at the time point when the event occurs to the case, that is, the age at first birth for the childless indivdiual, 
 #    then we enroll this full-sibling pair into our matched pair case-control study;
 
 
