@@ -1,20 +1,16 @@
-### childless using sibling design 
 
-## Model 1: cond_logit_4550 -------------------
-#  conditional logitic regression model for childless in sibling pairs disconcordant on outcomes, using disease diagnoses before age 45/50
+### Conditional logistic regression model for sibling pairs discordant on childlessness, using a sibling-match design.
 
-## Model 2: cond_logit_sibmatch: -------------------
-# conditional logitic regression model for childless in sibling pairs disconcordant on outcomes, using a sibling-match design
 # To avoid the confounding from reverse causation and the higher prevalence of diseases in older people, 
-#    we use a matched pair case-control study design within full-siblings and then apply conditional logistic regression model or cox HR model stratified by full-sib families. 
-# The sibling matching processes could be: 
-# 1) remove individuals with the outcome event prior to the disease exposure. 
-#    By removing individuals with the outcome event prior to the disease exposure, we can avoid assigning potential affected individuals to be unaffected; 
-# 2) Keep only families having full-siblings discordant on outcome status, that is at least one sibling with children and one being childless; 
-# 3) Within each family, randomly select one sibling with children as control, and the childless siblings with closest birth year with the control as case; 
-# 4) If the case and the control are also discordant on disease status at the time point when the event occurs to the case that is the age at first birth for case for childless, 
-#    then we enroll this full-sibling pair into our matched pair case-control study;
+# We use a matched pair case-control study design within full-siblings and then apply a conditional logistic regression model or a coxPH model stratified by full-sib families. 
 
+# The sibling matching processes could be: 
+# 1) remove individuals with the outcome event before the disease exposure. 
+#    By removing individuals with the outcome event prior to the disease exposure, we can avoid assigning potentially affected individuals to be unaffected; 
+# 2) Keep only families having full siblings discordant on outcome status, that is, at least one sibling with children and one being childless; 
+# 3) Within each family, randomly select one sibling with children as control and the childless siblings with the closest birth year with the control as case; 
+# 4) If the case and the control are also discordant on disease status at the time point when the event occurs to the case, that is, the age at first birth for the case for childless, 
+#    then we enroll this full-sibling pair into our matched pair case-control study;
 
 
 
@@ -28,17 +24,15 @@ sex_n <- 1
 sexs <- c("male","female")
 
 # which outcome?
-# outcomeName <- "childless"  
 # outcomeName <- "childless_NoART"  
 outcomeName <- "childless_NoART_NoDeath4550"  
 
 
 # which diagnose to use? (both patterns are available in for loop)
-# mod_pattern <- "cond_logit_4550"   
-# mod_pattern <- "cond_logit_sibmatch"    
+mod_pattern <- "cond_logit_sibmatch"    
 
 # which sibs to include? Here, we compare four strategies to select siblings from each family.
-sib_pattern <- "withchildClosest"  # 1_case : 1_control regarding disease outcome
+sib_pattern <- "withchildClosest"  
 
 
 
