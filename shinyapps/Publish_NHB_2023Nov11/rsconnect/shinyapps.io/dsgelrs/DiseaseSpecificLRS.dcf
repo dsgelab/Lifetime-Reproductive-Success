@@ -1,0 +1,9 @@
+name: DiseaseSpecificLRS
+title:
+username:
+account: dsgelrs
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 5796788
+bundleId: 7915513
+url: https://dsgelrs.shinyapps.io/DiseaseSpecificLRS/
