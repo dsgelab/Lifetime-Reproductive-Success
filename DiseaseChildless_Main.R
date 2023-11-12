@@ -5,7 +5,7 @@
 # We use a matched pair case-control study design within full-siblings and then apply a conditional logistic regression model or a coxPH model stratified by full-sib families. 
 
 # The sibling matching processes could be: 
-# 1) remove individuals with the outcome event before the disease exposure. 
+# 1) Remove individuals with the outcome event before the disease exposure. 
 #    By removing individuals with the outcome event prior to the disease exposure, we can avoid assigning potentially affected individuals to be unaffected; 
 # 2) Keep only families having full siblings discordant on outcome status, that is, at least one sibling with children and one being childless; 
 # 3) Within each family, randomly select one sibling with children as control and the childless siblings with the closest birth year with the control as case; 
