@@ -109,7 +109,7 @@ sib_pattern <- "withchildClosest"  # 1_case : 1_control regarding disease outcom
 
 # work directory and function
 setwd("REGRESSION/")
-r_dir <- "/homes/aliu/DSGE_LRS/input/r_files/"
+r_dir <- "r_files/"
 
 
 library(data.table)
